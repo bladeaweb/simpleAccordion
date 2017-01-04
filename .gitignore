@@ -90,3 +90,6 @@ $RECYCLE.BIN/
 *.lnk
 
 /.idea/
+/.idea/vcs.xml
+source/css/
+source/sass/

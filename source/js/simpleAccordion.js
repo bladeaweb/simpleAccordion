@@ -10,7 +10,7 @@ lines (85 sloc)  2.8 KB
 }(function ($) {
   $.fn.simpleWordWrapper = function (options) {
     options = $.extend({
-      classWrapperName: "accordion-wrapper",
+      classContainerName: "accordion-wrapper",
       classItemName: "accordion",
       classTitleName: "accordion-title",
       classContentName: "accordion-content",
@@ -21,10 +21,12 @@ lines (85 sloc)  2.8 KB
       }
     }, options);
     var element = this,
-      classWrapperName = options.classWrapperName,
-      classWrapper = "."+classWrapperName,
+      classContainerName = options.classContainerName,
+      classContainer = "."+classContainerName,
       classItemName = options.classItemName,
       classItem = "."+classItemName,
+      classTitleName = options.classTitleName,
+      classTitle = "."+classTitleName,
       classContentName = options.classContentName,
       classContent = "."+classContentName,
       spoilerMode = options.spoilerMode,
